@@ -42,7 +42,7 @@ def _create_build_tool_config(ctx, xcode_config, target_triple, spm_configuratio
 
     if _is_xcode_at_least_version(xcode_config, "12.5"):
         args.extend(["-Xspm", "--manifest-cache", "-Xspm", "none"])
-        args.extend(["-Xspm", "--disable-repository-cache"])
+#        args.extend(["-Xspm", "--disable-repository-cache"])
 
     args.extend(["-Xswiftc", "-target", "-Xswiftc", target_triple])
     args.extend(["-Xcc", "-target", "-Xcc", target_triple])
